@@ -1,5 +1,5 @@
 :root {
-    --background-color: #e6c7dc;
+    --background-color: #979496;
     --btn-color: #d781a7;
     --btn-text-color: #e6c7dc;
     --project-card-bg: #ffffff00;
@@ -8,7 +8,7 @@
 }
 
 [data-theme="dark"] {
-    --background-color: #4f032e;
+    --background-color: #201e1f;
     --btn-color: #e6c7dc;
     --btn-text-color: #4f032e;
     --project-card-bg: #fff;
@@ -26,9 +26,70 @@ display: flex;
 #root {
     display: flex;
     flex-direction: column ;
-    gap: 60px;
+    gap: 40px;
 }
 
 h1, h2, h3,p{
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
+
+h2, h3, p{
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2{
+    text-transform: uppercase;
+
+}
+
+h2, h3{
+    font-size: 20px;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+}
+p{
+    font-size: 16px;
+    font-weight: 300;}
+
+    .sectionTitle{
+        margin-bottom: 30px;}
+
+        .hover{
+            cursor: pointer;
+        }
+
+        @media (max-width>= 800px) {
+            #root {
+                gap: 100px;
+            }
+            h1{
+                font-size: 40px;
+            }
+            h2,h3{
+             font-size: 24px;   }
+            p{
+                font-size: 20px;}
+
+                .sectionTitle{
+                    margin-bottom: 60px;
+                }
+        }  
+
+        
+        @media (max-width >= 1400px) {
+            #root {
+                gap: 200px;
+            }
+            h1{
+                font-size: 48px;
+            }
+            
+                .sectionTitle{
+                    margin-bottom: 75px;
+                }
+        }
+     

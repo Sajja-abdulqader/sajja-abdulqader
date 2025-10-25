@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px; 
+  padding: 40px 20px;
+}
+
+/* Projects container: holds all project cards */
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* slightly bigger gap */
+}
+
+/* Each project card link */
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #222;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  gap: 12px; /* more spacing inside the card */
+  padding: 20px 25px; /* bigger padding */
+  border-radius: 15px;
+}
+
+/* Hover effect for the whole card */
+a:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); 
+  background-color: rgba(0, 0, 0, 0.03); 
+}
+
+/* Project image: circular and clickable */
+.img {
+  width: 160px;  /* bigger image */
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.img:hover {
+  transform: scale(1.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.img:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Project title */
+h3 {
+  margin: 0;
+  font-size: 1.4rem; /* slightly bigger title */
+}
+
+/* Project description */
+p {
+  margin: 0;
+  font-size: 1rem; /* bigger description */
+  color: #555;
+  max-width: 250px; /* wider description area */
+  text-align: center;
+}

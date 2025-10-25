@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/sajLOGO.png';
+import heroImg from '../../assets/myLogo.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import  twitterLight from '../../assets/twitter-light.svg';
@@ -25,7 +25,7 @@ function Hero() {
   <div  className={styles.colorModeContainer}>
      
 <img src={heroImg} 
-alt="Sajja Abdulqader" 
+alt="Saja Abdulqader" 
 className={styles.hero} />
 
 <img src={themeIcon} 
@@ -39,11 +39,11 @@ className={styles.colorMode} />
             Sajja <br /> Abdulqader
 
         </h1>
-        <h2>     Frontend Developer </h2>
+        <h2>     Software Engineer </h2>
         <span> 
-        <a href='https://x.com/Sajjaabdulqader' target='_blank'>
+        {/* <a href='https://x.com/Sajjaabdulqader' target='_blank'>
         <img src={twitterIcon} alt="twitter icon" />
-        </a>
+        </a> */}
         <a href='https://github.com/dashboard' target='_blank'>
         <img src={githubIcon} alt="github icon" />
         </a>
@@ -51,7 +51,8 @@ className={styles.colorMode} />
         <img src={linkedinIcon} alt="linkedin icon" />
         </a>
         </span>
-<p> With a passion for developing modern react web apps for commercial businesses</p>
+<p className={styles.description}> Passionate about creating responsive, user friendly web applications using modern technologies.
+   Quick to learn and eager to contribute in a collaborative team environment.</p>
 <a href={Scv} download>   
         <button className="hover"  >
             Resume
